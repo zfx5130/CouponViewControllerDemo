@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="MenuTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRj-wy-JJi">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RHM-jN-wBQ">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="RZV-jk-9ze"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JRj-wy-JJi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="79n-tv-MnR"/>
+                    <constraint firstAttribute="trailing" secondItem="JRj-wy-JJi" secondAttribute="trailing" id="CPr-9P-4mV"/>
+                    <constraint firstAttribute="trailing" secondItem="RHM-jN-wBQ" secondAttribute="trailing" id="GKN-7n-Vmg"/>
+                    <constraint firstAttribute="bottom" secondItem="JRj-wy-JJi" secondAttribute="bottom" id="KVL-Mc-Sqd"/>
+                    <constraint firstItem="RHM-jN-wBQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cRX-QB-2Li"/>
+                    <constraint firstItem="JRj-wy-JJi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nEu-N4-XkF"/>
+                    <constraint firstAttribute="bottom" secondItem="RHM-jN-wBQ" secondAttribute="bottom" id="pZy-mO-Cyw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="lineView" destination="RHM-jN-wBQ" id="4gS-AY-RCL"/>
+                <outlet property="menuTitleLabel" destination="JRj-wy-JJi" id="Exu-PP-ElI"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
