@@ -10,11 +10,12 @@
 
 @interface UserOrderManageTableViewCell : UITableViewCell
 
-
 @property (strong, nonatomic) IBOutlet UIImageView *expandImageView;
 
 @property (nonatomic, assign, getter = isExpandable) BOOL expandable;
 @property (nonatomic, assign, getter = isExpanded) BOOL expanded;
+
+@property (strong, nonatomic) IBOutlet UIView *lineView;
 
 - (void)addIndicatorView;
 - (void)removeIndicatorView;

@@ -27,8 +27,6 @@
 		849CBF9D1DB0C21B00DC7959 /* UserOrderManageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849CBF9B1DB0C21B00DC7959 /* UserOrderManageTableViewCell.xib */; };
 		849CBFA11DB0C77D00DC7959 /* UserOrderProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 849CBF9F1DB0C77D00DC7959 /* UserOrderProductTableViewCell.m */; };
 		849CBFA21DB0C77D00DC7959 /* UserOrderProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849CBFA01DB0C77D00DC7959 /* UserOrderProductTableViewCell.xib */; };
-		849CBFA61DB0D47500DC7959 /* UserOrderPayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 849CBFA41DB0D47500DC7959 /* UserOrderPayTableViewCell.m */; };
-		849CBFA71DB0D47500DC7959 /* UserOrderPayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849CBFA51DB0D47500DC7959 /* UserOrderPayTableViewCell.xib */; };
 		84A6F8C61DEED70000BD55BA /* KTDropdownMenuView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84A6F8C01DEED70000BD55BA /* KTDropdownMenuView.bundle */; };
 		84A6F8C71DEED70000BD55BA /* KTDropdownMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6F8C21DEED70000BD55BA /* KTDropdownMenuView.m */; };
 		84A6F8C81DEED70000BD55BA /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6F8C41DEED70000BD55BA /* MenuTableViewCell.m */; };
@@ -100,9 +98,6 @@
 		849CBF9E1DB0C77D00DC7959 /* UserOrderProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserOrderProductTableViewCell.h; path = ../UserOrderProductTableViewCell.h; sourceTree = "<group>"; };
 		849CBF9F1DB0C77D00DC7959 /* UserOrderProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserOrderProductTableViewCell.m; path = ../UserOrderProductTableViewCell.m; sourceTree = "<group>"; };
 		849CBFA01DB0C77D00DC7959 /* UserOrderProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserOrderProductTableViewCell.xib; path = ../UserOrderProductTableViewCell.xib; sourceTree = "<group>"; };
-		849CBFA31DB0D47500DC7959 /* UserOrderPayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserOrderPayTableViewCell.h; path = ../UserOrderPayTableViewCell.h; sourceTree = "<group>"; };
-		849CBFA41DB0D47500DC7959 /* UserOrderPayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserOrderPayTableViewCell.m; path = ../UserOrderPayTableViewCell.m; sourceTree = "<group>"; };
-		849CBFA51DB0D47500DC7959 /* UserOrderPayTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserOrderPayTableViewCell.xib; path = ../UserOrderPayTableViewCell.xib; sourceTree = "<group>"; };
 		84A6F8C01DEED70000BD55BA /* KTDropdownMenuView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KTDropdownMenuView.bundle; sourceTree = "<group>"; };
 		84A6F8C11DEED70000BD55BA /* KTDropdownMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTDropdownMenuView.h; sourceTree = "<group>"; };
 		84A6F8C21DEED70000BD55BA /* KTDropdownMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTDropdownMenuView.m; sourceTree = "<group>"; };
@@ -241,9 +236,6 @@
 				849CBF9E1DB0C77D00DC7959 /* UserOrderProductTableViewCell.h */,
 				849CBF9F1DB0C77D00DC7959 /* UserOrderProductTableViewCell.m */,
 				849CBFA01DB0C77D00DC7959 /* UserOrderProductTableViewCell.xib */,
-				849CBFA31DB0D47500DC7959 /* UserOrderPayTableViewCell.h */,
-				849CBFA41DB0D47500DC7959 /* UserOrderPayTableViewCell.m */,
-				849CBFA51DB0D47500DC7959 /* UserOrderPayTableViewCell.xib */,
 				849CBF821DB0B0C300DC7959 /* WSTableView.h */,
 				849CBF831DB0B0C300DC7959 /* WSTableView.m */,
 				849CBF841DB0B0C300DC7959 /* WSTableViewCell.h */,
@@ -413,7 +405,6 @@
 				849CBF561DB093D100DC7959 /* Assets.xcassets in Resources */,
 				849CBF981DB0B34000DC7959 /* UserOrderManageCollectionViewCell.xib in Resources */,
 				849CBF9D1DB0C21B00DC7959 /* UserOrderManageTableViewCell.xib in Resources */,
-				849CBFA71DB0D47500DC7959 /* UserOrderPayTableViewCell.xib in Resources */,
 				84A6F8C91DEED70000BD55BA /* MenuTableViewCell.xib in Resources */,
 				849CBF541DB093D100DC7959 /* Main.storyboard in Resources */,
 			);
@@ -461,7 +452,6 @@
 				84A6F8C81DEED70000BD55BA /* MenuTableViewCell.m in Sources */,
 				84A6F8E91DEED73A00BD55BA /* MASViewConstraint.m in Sources */,
 				849CBF8B1DB0B0C300DC7959 /* WSTableView.m in Sources */,
-				849CBFA61DB0D47500DC7959 /* UserOrderPayTableViewCell.m in Sources */,
 				84A6F8E71DEED73A00BD55BA /* MASLayoutConstraint.m in Sources */,
 				849CBF8C1DB0B0C300DC7959 /* WSTableViewCell.m in Sources */,
 			);

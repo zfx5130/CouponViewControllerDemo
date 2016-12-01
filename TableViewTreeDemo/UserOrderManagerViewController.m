@@ -10,7 +10,6 @@
 #import "UserOrderManageCollectionViewCell.h"
 #import "UserOrderManageTableViewCell.h"
 #import "UserOrderProductTableViewCell.h"
-#import "UserOrderPayTableViewCell.h"
 
 #import "WSTableviewTree.h"
 #import "KTDropdownMenuView.h"
@@ -99,9 +98,7 @@ WSTableViewDelegate>
     
     UINib *orderProductNib = [UINib nibWithNibName:NSStringFromClass([UserOrderProductTableViewCell class]) bundle:nil];
     [self.tableView registerNib:orderProductNib forCellReuseIdentifier:NSStringFromClass([UserOrderProductTableViewCell class])];
-    
-    UINib *orderPayNib = [UINib nibWithNibName:NSStringFromClass([UserOrderPayTableViewCell class]) bundle:nil];
-    [self.tableView registerNib:orderPayNib forCellReuseIdentifier:NSStringFromClass([UserOrderPayTableViewCell class])];
+
 }
 
 - (void)addData {
@@ -112,13 +109,13 @@ WSTableViewDelegate>
     WSTableviewDataModel *dataModel = [[WSTableviewDataModel alloc] init];
     dataModel.firstLevelStr = @"医院选择";
     dataModel.shouldExpandSubRows = YES;
-    [dataModel object_add_toSecondLevelArrM:@"医院大飞哥医院大飞哥医院大飞哥医院大飞哥医院大飞哥医院大飞哥医院大飞哥医院大飞哥医院大飞哥医院大飞哥"];
+    [dataModel object_add_toSecondLevelArrM:@"医院大飞哥医院大斯蒂芬按时阿斯蒂芬按时阿斯蒂芬按时阿斯蒂芬按时阿斯斯飞斯蒂芬按时阿斯蒂芬按时阿斯哥医院大飞哥医院大飞哥医院大飞哥医院大飞哥医院大飞哥医院大飞哥医院大飞哥医院大飞哥"];
     [_dataSourceArrM addObject:dataModel];
     
     WSTableviewDataModel *dataModel2 = [[WSTableviewDataModel alloc] init];
     dataModel2.firstLevelStr = @"部位选择";
     dataModel2.shouldExpandSubRows = YES;
-    [dataModel2 object_add_toSecondLevelArrM:@"腿大师傅阿斯蒂芬按时阿斯蒂芬腿大师傅阿斯蒂芬按时阿斯蒂芬腿大师傅阿斯蒂芬按时阿斯蒂芬腿大师傅阿斯蒂芬按时阿斯蒂芬"];
+    [dataModel2 object_add_toSecondLevelArrM:@"腿大师傅阿斯蒂芬按时阿斯蒂芬斯蒂芬按时阿斯蒂芬按时阿斯按时阿斯斯蒂芬按时阿斯蒂芬按时阿斯蒂芬腿大师傅阿斯蒂芬按时阿斯蒂芬腿大师傅阿斯蒂芬按时阿斯蒂芬"];
     [_dataSourceArrM addObject:dataModel2];
     
     
@@ -187,7 +184,7 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
 #pragma mark - UITableViewDataSource & UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 10.0f;
+    return section == 0 ? 20.0f : 10.0f;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -228,7 +225,7 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 - (CGFloat)tableView:(WSTableView *)tableView heightForSubRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 90.0f;
+    return 70.0f;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

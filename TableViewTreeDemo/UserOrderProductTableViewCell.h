@@ -12,5 +12,6 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *couponLabel;
 
+@property (strong, nonatomic) IBOutlet UIView *holderView;
 
 @end
