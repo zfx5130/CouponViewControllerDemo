@@ -7,7 +7,7 @@
 //
 
 #import "WSTableView.h"
-#import "WSTableViewCell.h"
+#import "UserOrderManageTableViewCell.h"
 #import "WSTableViewCellIndicator.h"
 #import <objc/runtime.h>
 
@@ -144,7 +144,7 @@ CGFloat const kDefaultCellHeight = 44.0f;
     NSIndexPath *correspondingIndexPath = [self correspondingIndexPathForRowAtIndexPath:indexPath];
     if ([correspondingIndexPath subRow] == 0)
     {
-        WSTableViewCell *expandableCell = (WSTableViewCell *)[_WSTableViewDelegate tableView:tableView cellForRowAtIndexPath:correspondingIndexPath];
+        UserOrderManageTableViewCell *expandableCell = (UserOrderManageTableViewCell *)[_WSTableViewDelegate tableView:tableView cellForRowAtIndexPath:correspondingIndexPath];
         if ([expandableCell respondsToSelector:@selector(setSeparatorInset:)])
         {
             expandableCell.separatorInset = UIEdgeInsetsZero;
@@ -162,6 +162,7 @@ CGFloat const kDefaultCellHeight = 44.0f;
             
             if (isExpanded)
             {
+                NSLog(@"不同的处理");
                 expandableCell.accessoryView.transform = CGAffineTransformMakeRotation(M_PI);
             }
             else
@@ -279,7 +280,7 @@ CGFloat const kDefaultCellHeight = 44.0f;
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    WSTableViewCell *cell = (WSTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
+    UserOrderManageTableViewCell *cell = (UserOrderManageTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
     
     if ([cell respondsToSelector:@selector(isExpandable)])
     {
@@ -298,7 +299,6 @@ CGFloat const kDefaultCellHeight = 44.0f;
             if (_indexPath)
             {
                 NSInteger numberOfSubRows = [self numberOfSubRowsAtIndexPath:correspondingIndexPath];
-            
                 NSMutableArray *expandedIndexPaths = [NSMutableArray array];
                 NSInteger row = _indexPath.row;
                 NSInteger section = _indexPath.section;
@@ -311,6 +311,7 @@ CGFloat const kDefaultCellHeight = 44.0f;
             
                 if (cell.isExpanded)
                 {
+                    NSLog(@"不同的处理");
                     [self setExpanded:YES forCellAtIndexPath:correspondingIndexPath];
                     [self insertRowsAtIndexPaths:expandedIndexPaths withRowAnimation:UITableViewRowAnimationTop];
                 }
@@ -714,7 +715,7 @@ CGFloat const kDefaultCellHeight = 44.0f;
     
     for (NSIndexPath *indexPath in totalExpandableIndexPaths)
     {
-        WSTableViewCell *cell = (WSTableViewCell *)[self cellForRowAtIndexPath:indexPath];
+        UserOrderManageTableViewCell *cell = (UserOrderManageTableViewCell *)[self cellForRowAtIndexPath:indexPath];
         cell.expanded = NO;
         [cell accessoryViewAnimation];
     }

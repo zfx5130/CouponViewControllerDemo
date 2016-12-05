@@ -10,7 +10,7 @@
 #define WSTableviewTree_WSTableviewTree_h
 
 #import "WSTableView.h"
-#import "WSTableViewCell.h"
+#import "UserOrderManageTableViewCell.h"
 #import "WSTableViewCellIndicator.h"
 #import "WSTableviewDataModel.h"
 

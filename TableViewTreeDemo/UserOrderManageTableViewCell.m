@@ -17,10 +17,6 @@
     [super awakeFromNib];
     self.expandable = NO;
     self.expanded = NO;
-    self.expandImageView.layer.cornerRadius = 10.0f;
-    self.expandImageView.layer.masksToBounds = YES;
-    self.expandImageView.layer.borderColor = [UIColor grayColor].CGColor;
-    self.expandImageView.layer.borderWidth = 1.0f;
 }
 
 - (void)setSelected:(BOOL)selected

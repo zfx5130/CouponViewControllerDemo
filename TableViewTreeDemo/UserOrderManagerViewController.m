@@ -184,7 +184,7 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
 #pragma mark - UITableViewDataSource & UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return section == 0 ? 20.0f : 10.0f;
+    return section == 0 ? 20.0f :10.0f;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -221,7 +221,7 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 - (CGFloat)tableView:(WSTableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 100.0f;
+    return 110.0f;
 }
 
 - (CGFloat)tableView:(WSTableView *)tableView heightForSubRowAtIndexPath:(NSIndexPath *)indexPath {
