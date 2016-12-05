@@ -27,7 +27,7 @@
                             <constraint firstAttribute="trailing" secondItem="g9B-0R-cLM" secondAttribute="trailing" id="xht-nE-4ti"/>
                         </constraints>
                     </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nhr-Vn-8nT" userLabel="Line View">
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nhr-Vn-8nT" userLabel="Line View">
                         <color key="backgroundColor" red="0.81176470590000005" green="0.80784313730000001" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="1" id="HcX-qb-Zu0"/>
@@ -44,9 +44,9 @@
                 <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="JDY-8n-TzI" secondAttribute="trailing" constant="10" id="4px-IS-tOf"/>
-                    <constraint firstAttribute="bottom" secondItem="JDY-8n-TzI" secondAttribute="bottom" constant="10" id="6jg-q6-kQL"/>
+                    <constraint firstAttribute="bottom" secondItem="JDY-8n-TzI" secondAttribute="bottom" id="6jg-q6-kQL"/>
                     <constraint firstItem="JDY-8n-TzI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QSX-TH-e2I"/>
-                    <constraint firstAttribute="bottom" secondItem="OS6-BE-4a8" secondAttribute="bottom" id="RiZ-1j-GqE"/>
+                    <constraint firstAttribute="bottom" secondItem="OS6-BE-4a8" secondAttribute="bottom" constant="-10" id="RiZ-1j-GqE"/>
                     <constraint firstAttribute="trailing" secondItem="Nhr-Vn-8nT" secondAttribute="trailing" constant="10" id="c8N-Hg-WZl"/>
                     <constraint firstAttribute="bottom" secondItem="Nhr-Vn-8nT" secondAttribute="bottom" id="e2s-Bd-v1G"/>
                     <constraint firstItem="JDY-8n-TzI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="elj-yi-lrF"/>

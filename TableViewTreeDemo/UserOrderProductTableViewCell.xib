@@ -29,7 +29,7 @@
                                     <constraint firstAttribute="height" constant="1" id="b4r-mP-dnZ"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hj2-WA-R1l" userLabel="Botton line View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hj2-WA-R1l" userLabel="Right line View">
                                 <color key="backgroundColor" red="0.81176470590000005" green="0.80784313730000001" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1" id="aGU-YG-gpx"/>
@@ -45,7 +45,7 @@
                             <constraint firstAttribute="trailing" secondItem="hj2-WA-R1l" secondAttribute="trailing" id="YJX-W2-skk"/>
                             <constraint firstAttribute="trailing" secondItem="pjs-yS-pXh" secondAttribute="trailing" id="aYT-kC-fpi"/>
                             <constraint firstAttribute="bottom" secondItem="pjs-yS-pXh" secondAttribute="bottom" id="e9x-nl-Qde"/>
-                            <constraint firstItem="mCP-pY-ajg" firstAttribute="top" secondItem="oqF-K1-eCb" secondAttribute="top" id="hkY-tw-VxW"/>
+                            <constraint firstItem="mCP-pY-ajg" firstAttribute="top" secondItem="oqF-K1-eCb" secondAttribute="top" constant="10" id="hkY-tw-VxW"/>
                             <constraint firstAttribute="trailing" secondItem="mCP-pY-ajg" secondAttribute="trailing" constant="10" id="jkO-dW-9xZ"/>
                         </constraints>
                     </view>
