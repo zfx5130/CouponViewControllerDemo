@@ -221,7 +221,7 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 - (CGFloat)tableView:(WSTableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 110.0f;
+    return 120.0f;
 }
 
 - (CGFloat)tableView:(WSTableView *)tableView heightForSubRowAtIndexPath:(NSIndexPath *)indexPath {
