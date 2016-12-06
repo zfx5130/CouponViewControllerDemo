@@ -70,12 +70,21 @@
                                 <color key="textColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coupon_right_tag_used_image" translatesAutoresizingMaskIntoConstraints="NO" id="IDy-B8-lYJ">
+                                <rect key="frame" x="334" y="0.0" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="B2W-by-pCD"/>
+                                    <constraint firstAttribute="height" constant="60" id="zMG-Kp-Feu"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="GkB-kr-FSq" secondAttribute="trailing" constant="10" id="8nX-1i-981"/>
+                            <constraint firstAttribute="trailing" secondItem="IDy-B8-lYJ" secondAttribute="trailing" id="AOx-we-u7o"/>
                             <constraint firstAttribute="bottom" secondItem="j3o-Ho-8j2" secondAttribute="bottom" constant="10" id="Efp-cA-qDR"/>
                             <constraint firstItem="o97-4w-gPw" firstAttribute="leading" secondItem="JDY-8n-TzI" secondAttribute="leading" constant="10" id="Nm0-9e-cj1"/>
                             <constraint firstItem="g9B-0R-cLM" firstAttribute="top" secondItem="JDY-8n-TzI" secondAttribute="top" id="REF-pD-CZM"/>
+                            <constraint firstItem="IDy-B8-lYJ" firstAttribute="top" secondItem="JDY-8n-TzI" secondAttribute="top" id="UpK-4f-CKl"/>
                             <constraint firstItem="o97-4w-gPw" firstAttribute="height" secondItem="btW-wp-mow" secondAttribute="height" id="VjC-qB-gAT"/>
                             <constraint firstAttribute="bottom" secondItem="g9B-0R-cLM" secondAttribute="bottom" id="Yo8-tj-uqv"/>
                             <constraint firstItem="btW-wp-mow" firstAttribute="leading" secondItem="JDY-8n-TzI" secondAttribute="leading" id="bMg-b4-TjK"/>
@@ -116,8 +125,14 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="bottomHolderView" destination="Nhr-Vn-8nT" id="JRA-eJ-foy"/>
+                <outlet property="couponCardBackImageView" destination="g9B-0R-cLM" id="2nW-ka-As3"/>
+                <outlet property="couponEndDateLabel" destination="j3o-Ho-8j2" id="ouu-zb-qex"/>
+                <outlet property="couponTagLabel" destination="o97-4w-gPw" id="jfK-V0-zhi"/>
                 <outlet property="expandImageView" destination="OS6-BE-4a8" id="ioh-WK-kM9"/>
+                <outlet property="leftCouponDescriptionLabel" destination="c9m-jU-OOr" id="tVT-YK-sbb"/>
                 <outlet property="lineView" destination="Nhr-Vn-8nT" id="Ph1-Aj-Au0"/>
+                <outlet property="rightPriceLabel" destination="GkB-kr-FSq" id="gbn-o2-Pwl"/>
+                <outlet property="rightTagImageView" destination="IDy-B8-lYJ" id="Htb-cz-5tn"/>
             </connections>
             <point key="canvasLocation" x="384" y="348"/>
         </tableViewCell>
@@ -125,6 +140,7 @@
     <resources>
         <image name="coupon_down_button_image" width="18" height="18"/>
         <image name="coupon_purple_back_image" width="393" height="120"/>
+        <image name="coupon_right_tag_used_image" width="73" height="73"/>
         <image name="coupon_tag_back_image" width="96" height="22"/>
     </resources>
 </document>

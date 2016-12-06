@@ -19,6 +19,21 @@
 
 @property (strong, nonatomic) IBOutlet UIView *lineView;
 
+
+
+@property (strong, nonatomic) IBOutlet UIImageView *couponCardBackImageView;
+
+@property (strong, nonatomic) IBOutlet UILabel *couponTagLabel;
+
+@property (strong, nonatomic) IBOutlet UILabel *rightPriceLabel;
+
+@property (strong, nonatomic) IBOutlet UILabel *couponEndDateLabel;
+
+@property (strong, nonatomic) IBOutlet UILabel *leftCouponDescriptionLabel;
+
+@property (strong, nonatomic) IBOutlet UIImageView *rightTagImageView;
+
+
 - (void)accessoryViewAnimation;
 
 @end
