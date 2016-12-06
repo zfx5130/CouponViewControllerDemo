@@ -11,7 +11,6 @@
 
 #import "WSTableView.h"
 #import "UserOrderManageTableViewCell.h"
-#import "WSTableViewCellIndicator.h"
 #import "WSTableviewDataModel.h"
 
 #define kWSTableViewSecondLevelObj @"secondLevelObj"

@@ -8,7 +8,6 @@
 
 #import "WSTableView.h"
 #import "UserOrderManageTableViewCell.h"
-#import "WSTableViewCellIndicator.h"
 #import <objc/runtime.h>
 
 static NSString * const kIsExpandedKey = @"isExpanded";
@@ -73,7 +72,6 @@ CGFloat const kDefaultCellHeight = 44.0f;
 - (void)setSeparatorColor:(UIColor *)separatorColor
 {
     [super setSeparatorColor:separatorColor];
-    [WSTableViewCellIndicator setIndicatorColor:separatorColor];
 }
 
 - (NSMutableDictionary *)expandableCells

@@ -7,7 +7,6 @@
 //
 
 #import "UserOrderManageTableViewCell.h"
-#import "WSTableViewCellIndicator.h"
 
 #define kIndicatorViewTag -1
 

@@ -18,7 +18,6 @@
 		849CBF7F1DB0ADB800DC7959 /* UserOrderManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849CBF7D1DB0ADB800DC7959 /* UserOrderManagerViewController.m */; };
 		849CBF801DB0ADB800DC7959 /* UserOrderManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849CBF7E1DB0ADB800DC7959 /* UserOrderManagerViewController.xib */; };
 		849CBF8B1DB0B0C300DC7959 /* WSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849CBF831DB0B0C300DC7959 /* WSTableView.m */; };
-		849CBF8D1DB0B0C300DC7959 /* WSTableViewCellIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 849CBF871DB0B0C300DC7959 /* WSTableViewCellIndicator.m */; };
 		849CBF8E1DB0B0C300DC7959 /* WSTableviewDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 849CBF891DB0B0C300DC7959 /* WSTableviewDataModel.m */; };
 		849CBF971DB0B34000DC7959 /* UserOrderManageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 849CBF951DB0B34000DC7959 /* UserOrderManageCollectionViewCell.m */; };
 		849CBF981DB0B34000DC7959 /* UserOrderManageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849CBF961DB0B34000DC7959 /* UserOrderManageCollectionViewCell.xib */; };
@@ -81,8 +80,6 @@
 		849CBF7E1DB0ADB800DC7959 /* UserOrderManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserOrderManagerViewController.xib; sourceTree = "<group>"; };
 		849CBF821DB0B0C300DC7959 /* WSTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSTableView.h; sourceTree = "<group>"; };
 		849CBF831DB0B0C300DC7959 /* WSTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSTableView.m; sourceTree = "<group>"; };
-		849CBF861DB0B0C300DC7959 /* WSTableViewCellIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSTableViewCellIndicator.h; sourceTree = "<group>"; };
-		849CBF871DB0B0C300DC7959 /* WSTableViewCellIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSTableViewCellIndicator.m; sourceTree = "<group>"; };
 		849CBF881DB0B0C300DC7959 /* WSTableviewDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSTableviewDataModel.h; sourceTree = "<group>"; };
 		849CBF891DB0B0C300DC7959 /* WSTableviewDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSTableviewDataModel.m; sourceTree = "<group>"; };
 		849CBF8A1DB0B0C300DC7959 /* WSTableviewTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSTableviewTree.h; sourceTree = "<group>"; };
@@ -235,8 +232,6 @@
 				849CBFA01DB0C77D00DC7959 /* UserOrderProductTableViewCell.xib */,
 				849CBF821DB0B0C300DC7959 /* WSTableView.h */,
 				849CBF831DB0B0C300DC7959 /* WSTableView.m */,
-				849CBF861DB0B0C300DC7959 /* WSTableViewCellIndicator.h */,
-				849CBF871DB0B0C300DC7959 /* WSTableViewCellIndicator.m */,
 				849CBF881DB0B0C300DC7959 /* WSTableviewDataModel.h */,
 				849CBF891DB0B0C300DC7959 /* WSTableviewDataModel.m */,
 				849CBF8A1DB0B0C300DC7959 /* WSTableviewTree.h */,
@@ -427,7 +422,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A6F8E51DEED73A00BD55BA /* MASConstraint.m in Sources */,
-				849CBF8D1DB0B0C300DC7959 /* WSTableViewCellIndicator.m in Sources */,
 				84A6F8ED1DEED73A00BD55BA /* ViewController+MASAdditions.m in Sources */,
 				849CBFA11DB0C77D00DC7959 /* UserOrderProductTableViewCell.m in Sources */,
 				849CBF8E1DB0B0C300DC7959 /* WSTableviewDataModel.m in Sources */,
