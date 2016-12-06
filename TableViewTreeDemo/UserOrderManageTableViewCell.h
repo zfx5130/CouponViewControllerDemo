@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WSTableviewDataModel.h"
 
 @interface UserOrderManageTableViewCell : UITableViewCell
 
@@ -35,5 +36,7 @@
 
 
 - (void)accessoryViewAnimation;
+
+- (void)renderCellWithDataModel:(WSTableviewDataModel *)dataModel;
 
 @end

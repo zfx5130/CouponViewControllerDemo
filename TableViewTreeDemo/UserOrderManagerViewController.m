@@ -102,29 +102,75 @@ WSTableViewDelegate>
 }
 
 - (void)addData {
-    
     self.tableView.WSTableViewDelegate = self;
     
     _dataSourceArrM = [NSMutableArray array];
     WSTableviewDataModel *dataModel = [[WSTableviewDataModel alloc] init];
-    dataModel.firstLevelStr = @"医院选择";
-    [dataModel object_add_toSecondLevelArrM:@"医院大飞哥医院大斯蒂芬按时阿斯蒂芬"];
+    [dataModel object_add_toSecondLevelArrM:@"次卡片在活动中可用"];
+    
+    dataModel.tagType = CouponTagTypeNormal;
+    dataModel.cardType = CouponTypePrice;
+    dataModel.cardTagTitle = @"回赠老顾客";
+    dataModel.cardDescContent = @"订单满50元可用";
+    dataModel.timeEndStr = @"永久有效";
+    dataModel.cardPrice = @"￥20";
+    dataModel.detailContent = @"次卡片在活动中可用";
     [_dataSourceArrM addObject:dataModel];
     
     WSTableviewDataModel *dataModel2 = [[WSTableviewDataModel alloc] init];
-    dataModel2.firstLevelStr = @"部位选择";
-    [dataModel2 object_add_toSecondLevelArrM:@"斯蒂芬腿大师傅阿斯蒂芬按时阿斯蒂芬"];
+    dataModel2.cardTagTitle = @"双十一剁手";
+    dataModel2.cardType = CouponTypeDiscount;
+    dataModel2.tagType = CouponTagTypeNormal;
+    dataModel2.cardDescContent = @"订单满149元可用";
+    dataModel2.timeEndStr = @"2015.04.12后有效";
+    dataModel2.cardPrice = @"9.9折";
+    dataModel2.detailContent = @"";
     [_dataSourceArrM addObject:dataModel2];
     
-    
     WSTableviewDataModel *dataModel3 = [[WSTableviewDataModel alloc] init];
-    dataModel3.firstLevelStr = @"部位选择2";
-    [dataModel3 object_add_toSecondLevelArrM:@"腿2"];
+    [dataModel3 object_add_toSecondLevelArrM:@"卡片使用时段为：20：00 - 12：00"];
+    dataModel3.cardTagTitle = @"美心月饼";
+    dataModel3.cardType = CouponTypePrice;
+    dataModel3.tagType = CouponTagTypeNormal;
+    dataModel3.cardDescContent = @"订单金额不限";
+    dataModel3.timeEndStr = @"2016.04.12-2017.05-10";
+    dataModel3.cardPrice = @"5.9折";
+    dataModel3.detailContent = @"卡片使用时段为：20：00 - 12：00";
     [_dataSourceArrM addObject:dataModel3];
     
     WSTableviewDataModel *dataModel4 = [[WSTableviewDataModel alloc] init];
-    dataModel4.firstLevelStr = @"部位选择啥打法是否";
+    dataModel4.cardTagTitle = @"哔哩哔哩😄";
+    dataModel4.cardType = CouponTypeDiscountUsed;
+    dataModel4.tagType = CouponTagTypeOlded;
+    dataModel4.cardDescContent = @"订单金额不限";
+    dataModel4.timeEndStr = @"2016.04.12 - 2016.05.11";
+    dataModel4.cardPrice = @"6.0折";
+    dataModel4.detailContent = @"";
     [_dataSourceArrM addObject:dataModel4];
+    
+    WSTableviewDataModel *dataModel5 = [[WSTableviewDataModel alloc] init];
+    dataModel5.cardTagTitle = @"买买买买😑";
+    [dataModel5 object_add_toSecondLevelArrM:@"卡片使用时段为：20：00 - 12：00"];
+    dataModel5.cardType = CouponTypePriceOlded;
+    dataModel5.tagType = CouponTagTypeOlded;
+    dataModel5.cardDescContent = @"订单满500元可用";
+    dataModel5.timeEndStr = @"2016.04.12后有效";
+    dataModel5.cardPrice = @"8.0折";
+    dataModel5.detailContent = @"卡片使用时段为：20：00 - 12：00";
+    [_dataSourceArrM addObject:dataModel5];
+    
+    WSTableviewDataModel *dataModel6 = [[WSTableviewDataModel alloc] init];
+    dataModel6.cardTagTitle = @"双十二淘宝";
+    [dataModel6 object_add_toSecondLevelArrM:@"卡片使用时段为：20：00 - 12：00"];
+    dataModel6.cardType = CouponTypeDiscountOlded;
+    dataModel6.detailContent = @"卡片使用时段为：20：00 - 12：00";
+    dataModel6.tagType = CouponTagTypeUsed;
+    dataModel6.cardDescContent = @"订单满998元可用";
+    dataModel6.timeEndStr = @"2016.05.11有效";
+    dataModel6.cardPrice = @"7.0折";
+    [_dataSourceArrM addObject:dataModel6];
+    
+    
 }
 
 #pragma mark - Getters & Setters
@@ -172,7 +218,6 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     self.selectedIndexPath = indexPath;
     [collectionView reloadData];
     NSString *title = self.titleArrays[indexPath.item];
-    
     UserOrderType type = [self getOrderTypeWithTitle:title];
     NSLog(@"type:::::::%@",@(type));
 }
@@ -203,10 +248,12 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
     WSTableviewDataModel *dataModel = _dataSourceArrM[indexPath.section];
     UserOrderManageTableViewCell *cell =
     [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UserOrderManageTableViewCell class])];
     cell.expandable = dataModel.expandable;
+    [cell renderCellWithDataModel:dataModel];
     return cell;
 }
 
@@ -226,7 +273,6 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     WSTableviewDataModel *dataModel = _dataSourceArrM[indexPath.section];
     dataModel.shouldExpandSubRows = !dataModel.shouldExpandSubRows;
     NSLog(@"Section: %ld, Row:%ld", indexPath.section, indexPath.section);
