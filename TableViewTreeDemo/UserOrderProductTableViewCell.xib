@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -12,13 +15,17 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="414" height="69"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oqF-K1-eCb" userLabel="Top View">
+                        <rect key="frame" x="7" y="0.0" width="399" height="69.5"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coupon_detail_back_image" translatesAutoresizingMaskIntoConstraints="NO" id="fl7-R3-YWG"/>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阿斯蒂芬大声道阿斯蒂芬阿斯蒂芬暗室逢灯安抚大声道发大飞哥发给发给发给返回水电费根深蒂固是对方告诉对方告诉对方告诉对方告诉对方告诉对方个所得税是大法官" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCP-pY-ajg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coupon_detail_back_image" translatesAutoresizingMaskIntoConstraints="NO" id="fl7-R3-YWG">
+                                <rect key="frame" x="0.0" y="0.0" width="399" height="69.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCP-pY-ajg">
+                                <rect key="frame" x="10" y="5" width="379" height="44.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.69019607839999997" green="0.69019607839999997" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -29,8 +36,8 @@
                             <constraint firstItem="mCP-pY-ajg" firstAttribute="leading" secondItem="oqF-K1-eCb" secondAttribute="leading" constant="10" id="OUR-zM-3wS"/>
                             <constraint firstAttribute="trailing" secondItem="fl7-R3-YWG" secondAttribute="trailing" id="Ovf-Yk-z09"/>
                             <constraint firstAttribute="bottom" secondItem="fl7-R3-YWG" secondAttribute="bottom" id="Su8-95-bvS"/>
-                            <constraint firstAttribute="bottom" secondItem="mCP-pY-ajg" secondAttribute="bottom" constant="10" id="UKW-y9-5gx"/>
-                            <constraint firstItem="mCP-pY-ajg" firstAttribute="top" secondItem="oqF-K1-eCb" secondAttribute="top" id="hkY-tw-VxW"/>
+                            <constraint firstAttribute="bottom" secondItem="mCP-pY-ajg" secondAttribute="bottom" constant="20" id="UKW-y9-5gx"/>
+                            <constraint firstItem="mCP-pY-ajg" firstAttribute="top" secondItem="oqF-K1-eCb" secondAttribute="top" constant="5" id="hkY-tw-VxW"/>
                             <constraint firstAttribute="trailing" secondItem="mCP-pY-ajg" secondAttribute="trailing" constant="10" id="jkO-dW-9xZ"/>
                             <constraint firstItem="fl7-R3-YWG" firstAttribute="top" secondItem="oqF-K1-eCb" secondAttribute="top" id="qet-BA-hBj"/>
                         </constraints>
@@ -39,8 +46,8 @@
                 <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="oqF-K1-eCb" secondAttribute="bottom" id="HKs-RO-VPG"/>
-                    <constraint firstAttribute="trailing" secondItem="oqF-K1-eCb" secondAttribute="trailing" constant="10" id="P1B-1v-4WZ"/>
-                    <constraint firstItem="oqF-K1-eCb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="T25-vC-LPz"/>
+                    <constraint firstAttribute="trailing" secondItem="oqF-K1-eCb" secondAttribute="trailing" constant="8" id="P1B-1v-4WZ"/>
+                    <constraint firstItem="oqF-K1-eCb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="T25-vC-LPz"/>
                     <constraint firstItem="oqF-K1-eCb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gqx-6q-aPR"/>
                 </constraints>
             </tableViewCellContentView>

@@ -19,9 +19,6 @@
 
 @property (strong, nonatomic) IBOutlet UIView *lineView;
 
-- (void)addIndicatorView;
-- (void)removeIndicatorView;
-- (BOOL)containsIndicatorView;
 - (void)accessoryViewAnimation;
 
 @end

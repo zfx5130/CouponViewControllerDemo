@@ -166,18 +166,12 @@ CGFloat const kDefaultCellHeight = 44.0f;
                 expandableCell.accessoryView.transform = CGAffineTransformMakeRotation(M_PI);
             }
             else
-            {
-                if ([expandableCell containsIndicatorView])
-                {
-                    [expandableCell removeIndicatorView];
-                }
-            }
+            {}
         }
         else
         {
             expandableCell.expanded = NO;
             expandableCell.accessoryView = nil;
-            [expandableCell removeIndicatorView];
         }
         
        return expandableCell;
@@ -281,7 +275,6 @@ CGFloat const kDefaultCellHeight = 44.0f;
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     UserOrderManageTableViewCell *cell = (UserOrderManageTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
-    
     if ([cell respondsToSelector:@selector(isExpandable)])
     {
         if (cell.isExpandable)
